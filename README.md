@@ -1,5 +1,11 @@
 # vue-portfolio
 
+The official portfolio web-app of Ayush P Gupta made with Vue+Vuetify framework.
+
+Live Demo: [https://apgapg.github.io/vue-portfolio/](https://apgapg.github.io/vue-portfolio/)
+
+The work is in progress...
+
 ## Project setup
 ```
 npm install
