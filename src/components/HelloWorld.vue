@@ -1,7 +1,7 @@
 <template>
   <v-container class="px-8">
     <v-row class="py-4" align="center">
-      <v-col cols="6">
+      <v-col md="6">
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Ayush World!</h1>
 
         <!-- <p class="subheading font-weight-regular">
@@ -16,7 +16,8 @@
           Hi, I am
           <span class="primary--text font-weight-medium">Ayush P Gupta</span>
           <br />IIT Roorkee | Flutter & Vue Developer | Physics Educator at
-          Unacademy <br />| Flute Player | DIY person
+          Unacademy
+          <br />| Flute Player | DIY person
         </p>
 
         <div class="mt-12">
@@ -25,13 +26,8 @@
           </v-btn>
         </div>
       </v-col>
-      <v-col cols="6">
-        <v-img
-          alt="Vuetify Name"
-          contain
-          min-width="100"
-          src="../assets/cover.svg"
-        />
+      <v-col class="hidden-sm-and-down" md="6">
+        <v-img alt="Vuetify Name" contain min-width="100" src="../assets/cover.svg" />
       </v-col>
 
       <!-- <v-col class="mb-5" cols="12">
@@ -57,28 +53,24 @@
       </v-col>
       <v-col cols="12">
         <p class="text-h6 font-weight-regular grey--text text--darken-1">
-          I am a graduate from IIT Roorkee (2018)<br />
-          I belong to Lucknow, India<br /><br />
-
-          My area of interest is Application Development, Teaching Physics,<br />
-          Playing Flute, Sketching, DIY stuff, self-learning and many more.
+          I am a graduate from IIT Roorkee (2018)
+          <br />I belong to Lucknow, India
+          <br />
+          <br />My area of interest is Application Development, Teaching Physics,
+          <br />Playing Flute, Sketching, DIY stuff, self-learning and many more.
           <br />
           <br />Mainly my expertise is with Mobile Application Development using
           <a
-            class=" font-weight-medium px-1"
+            class="font-weight-medium px-1"
             href="https://flutter.dev/"
             target="_blank"
-          >
-            Flutter</a
-          >SDK.<br />
-          Also I have intermediate expertise with web app development using
+          >Flutter</a>SDK.
+          <br />Also I have intermediate expertise with web app development using
           <a
-            class=" font-weight-medium px-1"
+            class="font-weight-medium px-1"
             href="https://vuejs.org/"
             target="_blank"
-          >
-            VueJs</a
-          >.
+          >VueJs</a>.
         </p>
       </v-col>
     </v-row>
@@ -105,54 +97,53 @@ export default {
     ecosystem: [
       {
         text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader",
+        href: "https://github.com/vuetifyjs/vuetify-loader"
       },
       {
         text: "github",
-        href: "https://github.com/vuetifyjs/vuetify",
+        href: "https://github.com/vuetifyjs/vuetify"
       },
       {
         text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify",
-      },
+        href: "https://github.com/vuetifyjs/awesome-vuetify"
+      }
     ],
     importantLinks: [
       {
         text: "Documentation",
-        href: "https://vuetifyjs.com",
+        href: "https://vuetifyjs.com"
       },
       {
         text: "Chat",
-        href: "https://community.vuetifyjs.com",
+        href: "https://community.vuetifyjs.com"
       },
       {
         text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify",
+        href: "https://madewithvuejs.com/vuetify"
       },
       {
         text: "Twitter",
-        href: "https://twitter.com/vuetifyjs",
+        href: "https://twitter.com/vuetifyjs"
       },
       {
         text: "Articles",
-        href: "https://medium.com/vuetify",
-      },
+        href: "https://medium.com/vuetify"
+      }
     ],
     whatsNext: [
       {
         text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer",
+        href: "https://vuetifyjs.com/components/api-explorer"
       },
       {
         text: "Select a layout",
-        href: "https://vuetifyjs.com/layout/pre-defined",
+        href: "https://vuetifyjs.com/layout/pre-defined"
       },
       {
         text: "Frequently Asked Questions",
-        href:
-          "https://vuetifyjs.com/getting-started/frequently-asked-questions",
-      },
-    ],
-  }),
+        href: "https://vuetifyjs.com/getting-started/frequently-asked-questions"
+      }
+    ]
+  })
 };
 </script>
