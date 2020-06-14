@@ -100,68 +100,63 @@
     </v-row>
     <PinnedRepos></PinnedRepos>
     <v-divider class="my-8"></v-divider>
+    <v-row class="text-center py-4" justify="center">
+      <v-col cols="12">
+        <p class="text-h4 font-weight-bold mb-3">My Blogs</p>
+      </v-col>
+      <v-col cols="12">
+        <v-btn
+          color="grey darken-3 text-none"
+          dark
+          href="https://github.com/apgapg"
+          target="_blank"
+        >
+          <img
+            class="mr-2"
+            src="https://img.icons8.com/ios/20/FFFFFF/medium-logo.png"
+          />
+          medium.com/@ayushpguptaapg
+        </v-btn>
+      </v-col>
+    </v-row>
+    <PinnedBlogs></PinnedBlogs>
+    <v-divider class="my-8"></v-divider>
+    <v-row class="text-center py-4" justify="center">
+      <v-col cols="12">
+        <p class="text-h4 font-weight-bold mb-3">My Playstore Apps</p>
+      </v-col>
+      <v-col cols="12">
+        <v-btn
+          color=" text-none"
+          href="https://play.google.com/store/apps/developer?id=Reweyou+Private+Limited"
+          target="_blank"
+        >
+          <img
+            class="mr-2"
+            src="https://img.icons8.com/color/24/000000/google-play.png"
+          />
+          VIEW PLAYSTORE
+        </v-btn>
+      </v-col>
+    </v-row>
+
+    <PinnedApps></PinnedApps>
+    <v-divider class="my-8"></v-divider>
   </v-container>
 </template>
 
 <script>
 import PinnedRepos from "@/components/PinnedRepos";
+import PinnedBlogs from "@/components/PinnedBlogs";
+import PinnedApps from "@/components/PinnedApps";
+
 export default {
   name: "HelloWorld",
   components: {
     PinnedRepos,
+    PinnedBlogs,
+    PinnedApps,
   },
-  data: () => ({
-    ecosystem: [
-      {
-        text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader",
-      },
-      {
-        text: "github",
-        href: "https://github.com/vuetifyjs/vuetify",
-      },
-      {
-        text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify",
-      },
-    ],
-    importantLinks: [
-      {
-        text: "Documentation",
-        href: "https://vuetifyjs.com",
-      },
-      {
-        text: "Chat",
-        href: "https://community.vuetifyjs.com",
-      },
-      {
-        text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify",
-      },
-      {
-        text: "Twitter",
-        href: "https://twitter.com/vuetifyjs",
-      },
-      {
-        text: "Articles",
-        href: "https://medium.com/vuetify",
-      },
-    ],
-    whatsNext: [
-      {
-        text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer",
-      },
-      {
-        text: "Select a layout",
-        href: "https://vuetifyjs.com/layout/pre-defined",
-      },
-      {
-        text: "Frequently Asked Questions",
-        href:
-          "https://vuetifyjs.com/getting-started/frequently-asked-questions",
-      },
-    ],
-  }),
+  data: () => ({}),
 };
 </script>
