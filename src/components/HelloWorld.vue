@@ -23,7 +23,7 @@
         <div class="mt-12">
           <!-- <v-btn color="primary">
             <v-icon left class="mr-2" small>mdi-file</v-icon>VIEW MY RESUME
-          </v-btn> -->
+          </v-btn>-->
           <v-btn class="ml-4" href="https://www.linkedin.com/in/ayushpgupta/" target="_blank">
             <img left class="mr-2" src="https://img.icons8.com/color/28/000000/linkedin.png" />LINKEDIN PROFILE
           </v-btn>
