@@ -29,6 +29,30 @@ export default {
   data: () => ({
     apps: [
       {
+        title: "Workozy - Field Data and Field Work Management",
+        appId: "com.workozy.android",
+        url: "http://localhost:3000/api/apps/com.workozy.android",
+        icon:
+          "https://lh3.googleusercontent.com/Tn6w0embt5M6pkDNGeRCPBylMHedTSjiiw7UpkgvUUX21eY8VKNpJTTGUWNkf7rEIRU",
+        developer: {
+          devId: "FieldAssist",
+          url: "http://localhost:3000/api/developers/FieldAssist"
+        },
+        developerId: "FieldAssist",
+        priceText: "FREE",
+        price: 0,
+        free: true,
+        summary: "Field Work Management made easy with Workozy",
+        scoreText: "3.9",
+        score: 3.88,
+        playstoreUrl:
+          "https://play.google.com/store/apps/details?id=com.workozy.android",
+        permissions:
+          "http://localhost:3000/api/apps/com.workozy.android/permissions",
+        similar: "http://localhost:3000/api/apps/com.workozy.android/similar",
+        reviews: "http://localhost:3000/api/apps/com.workozy.android/reviews"
+      },
+      {
         title: "DOT Services",
         appId: "com.dotservices.android",
         url: "http://localhost:3000/api/apps/com.dotservices.android",
@@ -37,7 +61,7 @@ export default {
         developer: {
           devId: "Reweyou Private Limited",
           url:
-            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited",
+            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited"
         },
         developerId: "Reweyou+Private+Limited",
         priceText: "FREE",
@@ -54,7 +78,7 @@ export default {
         similar:
           "http://localhost:3000/api/apps/com.dotservices.android/similar",
         reviews:
-          "http://localhost:3000/api/apps/com.dotservices.android/reviews",
+          "http://localhost:3000/api/apps/com.dotservices.android/reviews"
       },
       {
         title: "GitHub Trending",
@@ -65,7 +89,7 @@ export default {
         developer: {
           devId: "Reweyou Private Limited",
           url:
-            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited",
+            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited"
         },
         developerId: "Reweyou+Private+Limited",
         priceText: "FREE",
@@ -81,7 +105,7 @@ export default {
         similar:
           "http://localhost:3000/api/apps/com.git_trending.android/similar",
         reviews:
-          "http://localhost:3000/api/apps/com.git_trending.android/reviews",
+          "http://localhost:3000/api/apps/com.git_trending.android/reviews"
       },
       {
         title: "Sankalan: Self Composed Hindi Poems, Stories",
@@ -92,7 +116,7 @@ export default {
         developer: {
           devId: "Reweyou Private Limited",
           url:
-            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited",
+            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited"
         },
         developerId: "Reweyou+Private+Limited",
         priceText: "FREE",
@@ -109,7 +133,7 @@ export default {
         similar:
           "http://localhost:3000/api/apps/com.coddu.fluttersankalan/similar",
         reviews:
-          "http://localhost:3000/api/apps/com.coddu.fluttersankalan/reviews",
+          "http://localhost:3000/api/apps/com.coddu.fluttersankalan/reviews"
       },
       {
         title: "IIT-JEE Notes By Ayush P Gupta",
@@ -120,7 +144,7 @@ export default {
         developer: {
           devId: "Reweyou Private Limited",
           url:
-            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited",
+            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited"
         },
         developerId: "Reweyou+Private+Limited",
         priceText: "FREE",
@@ -136,7 +160,7 @@ export default {
         similar:
           "http://localhost:3000/api/apps/com.coddu.flutter.iitjee.notes/similar",
         reviews:
-          "http://localhost:3000/api/apps/com.coddu.flutter.iitjee.notes/reviews",
+          "http://localhost:3000/api/apps/com.coddu.flutter.iitjee.notes/reviews"
       },
       {
         title: "Connect IT - India's Startup Community",
@@ -147,7 +171,7 @@ export default {
         developer: {
           devId: "Reweyou Private Limited",
           url:
-            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited",
+            "http://localhost:3000/api/developers/Reweyou%20Private%20Limited"
         },
         developerId: "Reweyou+Private+Limited",
         priceText: "FREE",
@@ -162,10 +186,10 @@ export default {
         permissions:
           "http://localhost:3000/api/apps/com.connectit.android/permissions",
         similar: "http://localhost:3000/api/apps/com.connectit.android/similar",
-        reviews: "http://localhost:3000/api/apps/com.connectit.android/reviews",
-      },
-    ],
-  }),
+        reviews: "http://localhost:3000/api/apps/com.connectit.android/reviews"
+      }
+    ]
+  })
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-  <v-container class="px-8">
-    <v-row class="py-4" align="center">
-      <v-col md="6">
+  <v-container class="px-8" >
+    <v-row class="py-4" align="center" >
+      <v-col md="6" >
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Ayush World!</h1>
 
         <!-- <p class="subheading font-weight-regular">
