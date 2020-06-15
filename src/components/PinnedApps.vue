@@ -11,7 +11,7 @@
           >
             <v-card-title>{{ app.title }}</v-card-title>
             <v-card-text>{{ app.summary }}</v-card-text>
-            <v-img :src="app.icon" max-height="200" contain></v-img>
+            <v-img :src="app.icon" max-height="150" contain></v-img>
             <v-card-title class="mb-2">
               <v-icon left class="mr-1">mdi-star-outline</v-icon>
               {{ app.scoreText }}

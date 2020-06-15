@@ -16,22 +16,21 @@
           Hi, I am
           <span class="primary--text font-weight-medium">Ayush P Gupta</span>
           <br />IIT Roorkee | Flutter & Vue Developer | Physics Educator at
-          Unacademy <br />| Flute Player | DIY person
+          Unacademy
+          <br />| Flute Player | DIY person
         </p>
 
         <div class="mt-12">
-          <v-btn color="primary">
+          <!-- <v-btn color="primary">
             <v-icon left class="mr-2" small>mdi-file</v-icon>VIEW MY RESUME
+          </v-btn> -->
+          <v-btn class="ml-4" href="https://www.linkedin.com/in/ayushpgupta/" target="_blank">
+            <img left class="mr-2" src="https://img.icons8.com/color/28/000000/linkedin.png" />LINKEDIN PROFILE
           </v-btn>
         </div>
       </v-col>
       <v-col class="hidden-sm-and-down" md="6">
-        <v-img
-          alt="Vuetify Name"
-          contain
-          min-width="100"
-          src="../assets/cover.svg"
-        />
+        <v-img alt="Vuetify Name" contain min-width="100" src="../assets/cover.svg" />
       </v-col>
 
       <!-- <v-col class="mb-5" cols="12">
@@ -61,7 +60,8 @@
           <br />I belong to Lucknow, India
           <br />
           <br />My area of interest is Application Development, Teaching
-          Physics, <br />Playing Flute, Sketching, DIY stuff, self-learning and
+          Physics,
+          <br />Playing Flute, Sketching, DIY stuff, self-learning and
           many more.
           <br />
           <br />Mainly my expertise is with Mobile Application Development using
@@ -69,15 +69,14 @@
             class="font-weight-medium px-1"
             href="https://flutter.dev/"
             target="_blank"
-            >Flutter</a
-          >SDK. <br />Also I have intermediate expertise with web app
+          >Flutter</a>SDK.
+          <br />Also I have intermediate expertise with web app
           development using
           <a
             class="font-weight-medium px-1"
             href="https://vuejs.org/"
             target="_blank"
-            >VueJs</a
-          >.
+          >VueJs</a>.
         </p>
       </v-col>
     </v-row>
@@ -111,10 +110,7 @@
           href="https://github.com/apgapg"
           target="_blank"
         >
-          <img
-            class="mr-2"
-            src="https://img.icons8.com/ios/20/FFFFFF/medium-logo.png"
-          />
+          <img class="mr-2" src="https://img.icons8.com/ios/20/FFFFFF/medium-logo.png" />
           medium.com/@ayushpguptaapg
         </v-btn>
       </v-col>
@@ -131,10 +127,7 @@
           href="https://play.google.com/store/apps/developer?id=Reweyou+Private+Limited"
           target="_blank"
         >
-          <img
-            class="mr-2"
-            src="https://img.icons8.com/color/24/000000/google-play.png"
-          />
+          <img class="mr-2" src="https://img.icons8.com/color/24/000000/google-play.png" />
           VIEW PLAYSTORE
         </v-btn>
       </v-col>
@@ -155,8 +148,8 @@ export default {
   components: {
     PinnedRepos,
     PinnedBlogs,
-    PinnedApps,
+    PinnedApps
   },
-  data: () => ({}),
+  data: () => ({})
 };
 </script>

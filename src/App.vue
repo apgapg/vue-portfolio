@@ -34,7 +34,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
+      <!-- <v-btn
         class="text-none"
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
@@ -65,7 +65,7 @@
         text
       >
         <span>Contact</span>
-      </v-btn>
+      </v-btn>-->
     </v-app-bar>
 
     <v-content>
@@ -106,8 +106,47 @@
           </v-btn>
           <v-spacer></v-spacer>
         </v-row>
-      </v-container> -->
+      </v-container>-->
     </v-content>
+    <v-footer class="primary lighten-1" dark padless>
+      <v-row no-gutters class="py-2">
+        <v-col cols="12">
+          <v-card flat tile class="primary lighten-1 white--text text-center">
+            <v-card-text class="pa-1">
+              <v-btn icon x-large href="https://www.linkedin.com/in/ayushpgupta/" target="_blank">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
+              <v-btn icon x-large href="https://github.com/apgapg" target="_blank">
+                <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn icon x-large href="https://medium.com/@ayushpguptaapg" target="_blank">
+                <img src="https://img.icons8.com/ios/32/FFFFFF/medium-logo.png" />
+              </v-btn>
+
+              <v-btn
+                icon
+                x-large
+                href="https://www.youtube.com/channel/UCYxCh-to3v3PqEIlm2phgpA"
+                target="_blank"
+              >
+                <v-icon>mdi-youtube</v-icon>
+              </v-btn>
+              <v-btn icon x-large href="https://www.instagram.com/ayushpgupta" target="_blank">
+                <v-icon>mdi-instagram</v-icon>
+              </v-btn>
+              <v-btn icon x-large href="https://www.facebook.com/ayushpgupta" target="_blank">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+            </v-card-text>
+
+            <v-card-text class="white--text pa-1 mb-1">
+              ©{{ new Date().getFullYear() }}. All Rights Reserved —
+              <strong>Ayush P Gupta</strong>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
@@ -118,30 +157,12 @@ export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    HelloWorld
   },
 
   data: () => ({
     //
   }),
-  methods: {
-    onSearchClick() {
-      this.$router.push("/search");
-    },
-    onPhoneClick(number) {
-      window.open(`tel:${number}`);
-    },
-    onPlayStoreClick() {
-      window.open(
-        `https://play.google.com/store/apps/details?id=com.dotservices.android`
-      );
-    },
-    onFbClick() {
-      window.open(`https://www.facebook.com/dotappservices/`);
-    },
-    onInstaClick() {
-      window.open(`https://www.instagram.com/dotappservices/`);
-    },
-  },
+  methods: {}
 };
 </script>
