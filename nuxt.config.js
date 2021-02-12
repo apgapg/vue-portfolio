@@ -11,7 +11,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - vue-portfolio',
-    title: 'vue-portfolio',
+    title: 'Ayush P Gupta',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +21,11 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css'
+      }
     ]
   },
 
@@ -44,6 +48,23 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyBWyrXDvgZxATSQm5Gcsveo1Gm3hpc3XVc",
+          authDomain: "profile-c7d85.firebaseapp.com",
+          databaseURL: "https://profile-c7d85.firebaseio.com",
+          projectId: "profile-c7d85",
+          storageBucket: "profile-c7d85.appspot.com",
+          messagingSenderId: "226199288420",
+          appId: "1:226199288420:web:ec73c937b49523766dbd71"
+        },
+        services: {
+          analytics: true,
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
