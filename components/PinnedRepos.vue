@@ -11,12 +11,18 @@
           >
             <v-card-title>{{ repo.name }}</v-card-title>
             <v-card-text>{{ repo.description }}</v-card-text>
-
+            <v-img
+              v-if="repo.thumbnail != null"
+              :src="repo.thumbnail"
+              aspect-ratio="2"
+            ></v-img>
             <v-card-title>
               <v-icon left class="mr-1">mdi-star-outline</v-icon>
               {{ repo.stargazers_count }}
               <v-icon left class="mr-1 ml-2">mdi-source-fork</v-icon>
               {{ repo.forks }}
+              <v-icon left class="mr-1 ml-2">mdi-eye-check-outline</v-icon>
+              {{ repo.watchers_count }}
             </v-card-title>
           </v-card>
         </v-hover>
@@ -60,7 +66,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/vue-portfolio",
         description: "Official portfolio of Ayush P Gupta",
@@ -158,7 +164,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 161061820,
@@ -188,7 +194,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_profile",
         description: "View My Portfolio on Playstore",
@@ -288,7 +294,7 @@ export default {
         forks: 11,
         open_issues: 0,
         watchers: 74,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 267785389,
@@ -318,7 +324,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_responsive_tabs",
         description: "Flutter Responsive Tabs Demo",
@@ -422,7 +428,7 @@ export default {
         forks: 4,
         open_issues: 1,
         watchers: 32,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 175806962,
@@ -452,7 +458,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/pie_chart",
         description: "Flutter Pie chart with animation ",
@@ -550,12 +556,12 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 28,
         open_issues: 10,
         watchers: 105,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 189538522,
@@ -585,7 +591,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/json_table",
         description:
@@ -685,17 +691,19 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 28,
         open_issues: 4,
         watchers: 123,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 176000154,
         node_id: "MDEwOlJlcG9zaXRvcnkxNzYwMDAxNTQ=",
         name: "avatar_glow",
+        thumbnail:
+          "https://raw.githubusercontent.com/apgapg/avatar_glow/master/src/app.gif",
         full_name: "apgapg/avatar_glow",
         private: false,
         owner: {
@@ -720,7 +728,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/avatar_glow",
         description: "A Flutter Package providing Avatar Glow Widget",
@@ -819,12 +827,12 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 17,
         open_issues: 2,
         watchers: 154,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 176899998,
@@ -854,7 +862,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/DotMyStyle_backend",
         description: null,
@@ -957,7 +965,7 @@ export default {
         forks: 3,
         open_issues: 0,
         watchers: 2,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 198554321,
@@ -987,7 +995,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/DotMyStyle_App",
         description: "Official Flutter App of DotMyStyle",
@@ -1085,7 +1093,7 @@ export default {
         forks: 10,
         open_issues: 1,
         watchers: 9,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 270162028,
@@ -1115,7 +1123,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/awesome-flutter",
         description:
@@ -1216,7 +1224,7 @@ export default {
         forks: 0,
         open_issues: 0,
         watchers: 0,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 195514483,
@@ -1246,7 +1254,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_sample_key",
         description: "Medium Article",
@@ -1350,7 +1358,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 7,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 161299878,
@@ -1380,7 +1388,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_listview_in_scrollview",
         description: null,
@@ -1486,7 +1494,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 2,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 88947412,
@@ -1516,7 +1524,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/ShineEffect",
         description: null,
@@ -1614,7 +1622,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 5,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 179287436,
@@ -1644,7 +1652,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/search_widget",
         description:
@@ -1744,12 +1752,12 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 34,
         open_issues: 6,
         watchers: 125,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 264834479,
@@ -1779,7 +1787,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/vuetify-admin-dashboard",
         description: "Vue Admin Dashboard Template",
@@ -1883,7 +1891,7 @@ export default {
         forks: 0,
         open_issues: 2,
         watchers: 3,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 220425422,
@@ -1913,7 +1921,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_physics_concepts",
         description: "Physics Concepts by Ayush P Gupta",
@@ -2017,7 +2025,7 @@ export default {
         forks: 13,
         open_issues: 0,
         watchers: 48,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 218930802,
@@ -2047,7 +2055,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_portfolio",
         description: "Personal Portfolio of Ayush P Gupta",
@@ -2150,7 +2158,7 @@ export default {
         forks: 1,
         open_issues: 2,
         watchers: 6,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 206780330,
@@ -2180,7 +2188,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_git_trending",
         description: "App on Playstore",
@@ -2285,7 +2293,7 @@ export default {
         forks: 1,
         open_issues: 2,
         watchers: 3,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 144804052,
@@ -2315,7 +2323,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_drop_down",
         description: null,
@@ -2418,7 +2426,7 @@ export default {
         forks: 4,
         open_issues: 1,
         watchers: 3,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 169039088,
@@ -2448,7 +2456,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_teaching_notes",
         description: null,
@@ -2552,7 +2560,7 @@ export default {
         forks: 1,
         open_issues: 1,
         watchers: 3,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 138839189,
@@ -2582,7 +2590,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_mvp_app",
         description: null,
@@ -2682,7 +2690,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 4,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 240643058,
@@ -2712,7 +2720,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/rx_dart_samples",
         description: "Collection of Rx Dart samples",
@@ -2812,7 +2820,7 @@ export default {
         forks: 1,
         open_issues: 1,
         watchers: 9,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 148598195,
@@ -2842,7 +2850,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/flutter_json_parsing",
         description: null,
@@ -2946,7 +2954,7 @@ export default {
         forks: 0,
         open_issues: 2,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 233207657,
@@ -2976,7 +2984,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/iitjee",
         description: "IIT JEE Notes by Ayush P Gupta",
@@ -3065,7 +3073,7 @@ export default {
         forks: 1,
         open_issues: 2,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 238370428,
@@ -3095,7 +3103,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/gravit-design",
         description: "Gravit Designer illustrations by Ayush P Gupta",
@@ -3194,12 +3202,12 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 0,
         open_issues: 1,
         watchers: 2,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 233384138,
@@ -3229,7 +3237,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/awesome-ayushpgupta",
         description:
@@ -3335,12 +3343,12 @@ export default {
           name: "MIT License",
           spdx_id: "MIT",
           url: "https://api.github.com/licenses/mit",
-          node_id: "MDc6TGljZW5zZTEz"
+          node_id: "MDc6TGljZW5zZTEz",
         },
         forks: 0,
         open_issues: 0,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 201100358,
@@ -3370,7 +3378,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/dotservices_App",
         description: "Flutter App code of DOT Services",
@@ -3470,7 +3478,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 201003843,
@@ -3500,7 +3508,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/dotservices_backend",
         description: "Server code of DOT Services",
@@ -3604,7 +3612,7 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 0,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 130447244,
@@ -3634,7 +3642,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/pixstory-android",
         description: null,
@@ -3734,7 +3742,7 @@ export default {
         forks: 1,
         open_issues: 1,
         watchers: 3,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 234698068,
@@ -3764,7 +3772,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/sankalan_web",
         description: "Sankalan: Self Composed Hindi Poems, Stories",
@@ -3862,7 +3870,7 @@ export default {
         forks: 0,
         open_issues: 2,
         watchers: 1,
-        default_branch: "master"
+        default_branch: "master",
       },
       {
         id: 234776737,
@@ -3892,7 +3900,7 @@ export default {
           received_events_url:
             "https://api.github.com/users/apgapg/received_events",
           type: "User",
-          site_admin: false
+          site_admin: false,
         },
         html_url: "https://github.com/apgapg/example_json_table",
         description: null,
@@ -3995,19 +4003,19 @@ export default {
         forks: 0,
         open_issues: 1,
         watchers: 0,
-        default_branch: "master"
-      }
-    ]
+        default_branch: "master",
+      },
+    ],
   }),
   mounted() {
     axios
       .get("https://api.github.com/users/apgapg/repos?sort=updated")
-      .then(response => {
+      .then((response) => {
         let list = response.data;
         list.sort((a, b) => b.stargazers_count - a.stargazers_count);
         this.repos = list.slice(0, 6);
       });
-  }
+  },
 };
 </script>
 
