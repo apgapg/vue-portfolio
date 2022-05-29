@@ -19,7 +19,7 @@
           Unacademy <br />| Flute Player | DIY person
         </p>
 
-        <div class="mt-12">
+        <div class="mt-12 d-flex">
           <!-- <v-btn color="primary">
             <v-icon left class="mr-2" small>mdi-file</v-icon>VIEW MY RESUME
           </v-btn>-->
@@ -33,6 +33,40 @@
               class="mr-2"
               src="https://img.icons8.com/color/28/000000/linkedin.png"
             />LINKEDIN PROFILE
+          </v-btn>
+
+          <v-btn
+            class="ml-4"
+            href="https://github.com/apgapg"
+            target="_blank"
+            color="grey darken-3"
+            dark
+          >
+            <v-icon left class="mr-2" medium>mdi-github</v-icon>
+            MY GITHUB
+          </v-btn>
+        </div>
+
+        <div class="mt-4 d-flex">
+          <v-btn
+            class="ml-4"
+            href="https://drive.google.com/file/d/1gUoNBqig6q1wtv8JsxPCpowXhE6XGzwh/view"
+            target="_blank"
+            color="primary"
+            dark
+          >
+            <v-icon left class="mr-2" medium>mdi-file-pdf-box</v-icon>
+            MY RESUME (PDF)
+          </v-btn>
+          <v-btn
+            class="ml-4"
+            href="https://diary.ayushpgupta.com/"
+            target="_blank"
+            color="success"
+            dark
+          >
+            <v-icon left class="mr-2" medium>mdi-notebook</v-icon>
+            MY DIARY
           </v-btn>
         </div>
       </v-col>

@@ -4,14 +4,14 @@
       <div class="d-flex align-center">
         <!--
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />-->
+<v-img
+  alt="Vuetify Name"
+  class="shrink mt-1 hidden-sm-and-down"
+  contain
+  min-width="100"
+  src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+  width="100"
+/>-->
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -20,16 +20,7 @@
           transition="scale-transition"
           width="40"
         />
-        <div class="text-h6">+</div>
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink ml-2 mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="32"
-        />
-        <v-toolbar-title class="text-h6 pl-2">Portfolio</v-toolbar-title>
+        <v-toolbar-title class="text-h6 pl-2">My Portfolio</v-toolbar-title>
       </div>
 
       <v-spacer></v-spacer>
@@ -70,43 +61,6 @@
 
     <v-main>
       <HelloWorld />
-      <!-- <v-container
-        fluid
-        style="height: 80px;background-color: #263238;padding: 16px 32px"
-        dark
-      >
-        <v-row align="center">
-          <div style="width: 8px"></div>
-          <div>
-            Ayush P Gupta
-          </div>
-          <div>
-            ©2020. All Rights Reserved
-          </div>
-          <div style="width: 32px"></div>
-
-          <v-btn
-            @click="onFbClick()"
-            color="white"
-            icon
-            style="opacity: 0.9"
-            text
-          >
-            <v-icon>mdi-facebook-box</v-icon>
-          </v-btn>
-          <div style="width: 8px"></div>
-          <v-btn
-            @click="onInstaClick()"
-            color="white"
-            icon
-            style="opacity: 0.9"
-            text
-          >
-            <v-icon>mdi-instagram</v-icon>
-          </v-btn>
-          <v-spacer></v-spacer>
-        </v-row>
-      </v-container>-->
     </v-main>
     <v-footer class="primary lighten-1" dark padless>
       <v-row no-gutters class="py-2">
